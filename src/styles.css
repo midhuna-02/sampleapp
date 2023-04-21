@@ -1,0 +1,181 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/regular.min.js");
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.display-flex{
+    display: flex;
+}
+header{
+   
+    background-color: orange;
+    padding:20px;
+    justify-content: space-between;
+}
+
+header .logo a{
+  
+    font-size: 18px;
+    background-color: black;
+    color:white;
+     border-radius: 5px;
+    padding: 5px 10px;
+    
+    
+   
+}
+header .nav a{
+    
+    display: block;
+    margin: 0 5px;
+    padding: 5px;
+    color: black;
+   
+
+    
+}
+
+ul{
+    list-style: none;
+}
+header a{
+    text-decoration: none;
+}
+footer{
+  background-color:lightseagreen;
+  padding:20px;
+  text-align: center;
+ 
+
+  
+}
+.hero{
+    height:82vh;
+    display: flex;
+     align-items: center;
+  justify-content: center;
+
+}
+.imageclass img{
+    width:100%;
+    height: 50vh;
+    background-size: cover;
+}
+
+.card{
+    margin: 20px;
+    position: relative;
+}
+
+.card img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    object-fit: cover;
+}
+.container-card{
+    margin-left: 2px;
+    
+}
+.container-flex{
+    display: flex;
+    width: 1000px;
+}
+.card-flex{
+    margin-left: 1px;
+    display: flex;
+    
+    
+    /* justify-content: center;
+    
+    align-items:center; */
+   
+}
+.card button{
+    background-color:black;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    cursor:pointer;
+    width:50%;
+    border-radius: 5px;
+    
+   
+    
+}
+
+
+
+/* aside .favorite .active{
+    float:right;
+    justify-content:center;
+    margin-left: 10px;
+    display: block;
+    
+   
+} */
+
+
+
+
+/* .btn1:hover{
+    background-color: rgb(191, 191, 8);
+    color: white;
+    cursor:pointer;
+} */
+.card button:hover{
+    background-color: rgb(191, 191, 8);
+    color: white;
+    cursor:pointer;
+}
+.card.active button{
+    background-color:rgb(249, 87, 203);
+    
+}
+.destination{
+    margin-left: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.card .icons{
+position: absolute;
+width: 20px;
+height: auto;
+top: 10px;
+right: 10px;
+ display: none; 
+ /* transform:translateY(-120%);
+ transition: 0.5s;
+ opacity: 0; */
+ 
+
+}
+
+.card.active .icons{
+    /* transform:translateY(0%);
+    opacity: 1; */
+   display: block; 
+}
+aside .favImage{
+    position: relative;
+}
+aside .fa-circle-xmark{
+    position: absolute;
+    top:5px;
+    right: 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+aside img{
+    width: 200px;
+    height: 200px;
+}
+aside .fa-circle-xmark:hover{
+    color: brown;
+}
